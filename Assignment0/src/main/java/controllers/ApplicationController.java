@@ -16,6 +16,8 @@
 
 package controllers;
 
+import Model.Person;
+import Model.RanSuccessfullyList;
 import ninja.Result;
 import ninja.Results;
 
@@ -32,17 +34,17 @@ public class ApplicationController {
     }
     
     public Result ranSuccessfully() {
-        
-        SimplePojo simplePojo = new SimplePojo();
-        simplePojo.content = "Hello World! Hello Json!";
 
-        return Results.json().render(simplePojo);
+        RanSuccessfullyList rsf = new RanSuccessfullyList();
+        rsf.addPerson(new Person("Michael Hilton","MichaelHilton","Mac"));
+
+        return Results.json().render(rsf);
 
     }
-    
+
     public static class SimplePojo {
 
         public String content;
-        
+
     }
 }
