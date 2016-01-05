@@ -31,7 +31,7 @@ public class ApplicationController {
 
     }
     
-    public Result helloWorldJson() {
+    public Result ranSuccessfully() {
         
         SimplePojo simplePojo = new SimplePojo();
         simplePojo.content = "Hello World! Hello Json!";
