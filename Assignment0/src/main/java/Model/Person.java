@@ -9,6 +9,17 @@ public class Person {
     private String githubUserName;
     private String OS;
 
+    public Person(String name, String githubUserName, String OS){
+        this.name = name;
+        this.githubUserName = githubUserName;
+        this.OS = OS;
+    }
+
+    public Person() {
+
+    }
+
+
     public void setName(String name) {
         this.name = name;
     }
