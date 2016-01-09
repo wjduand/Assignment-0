@@ -28,6 +28,8 @@ public class RanSuccessfullyListTest {
         rsl.addPerson(p);
         p = new Person("Xiaoyong Zheng","zhengxiaoyong","Windows");
         rsl.addPerson(p);
-        assertEquals(5,rsl.getPersons().size());
+        p = new Person("Yuan Yuan","yuanyuan997","Mac");
+        rsl.addPerson(p);
+        assertEquals(6,rsl.getPersons().size());
     }
 }
