@@ -24,6 +24,7 @@ public class RanSuccessfullyListTest {
         rsl.addPerson(p);
         p = new Person("Wenbo Hou","HouPoc","Windows");
         rsl.addPerson(p);
+<<<<<<< HEAD
         p = new Person("Cameron Barrie","barrieca","Windows");
         rsl.addPerson(p);
         p = new Person("Daniel Goh","danielgwj","Mac");
@@ -31,5 +32,14 @@ public class RanSuccessfullyListTest {
 
         assertEquals(5,rsl.getPersons().size());
 
+=======
+        p = new Person("Vasile Grejuc","grejucv","Mac");
+        rsl.addPerson(p);
+        p = new Person("Xiaoyong Zheng","zhengxiaoyong","Windows");
+        rsl.addPerson(p);
+        p = new Person("Yuan Yuan","yuanyuan997","Mac");
+        rsl.addPerson(p);
+        assertEquals(6,rsl.getPersons().size());
+>>>>>>> cs361-W16/master
     }
 }
